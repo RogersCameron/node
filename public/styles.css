@@ -33,7 +33,31 @@
     text-decoration: none;
     cursor: pointer;
   }
-  
+  /* Styles for the Add Item Button */
+.add-item-button {
+  position: fixed; /* Or absolute, depending on your layout */
+  z-index: 2; /* Ensure it's above other content but below modal */
+  right: 20px; /* Distance from the right edge of the viewport */
+  top: 20px; /* Distance from the top edge of the viewport */
+  background-color: burlywood; /* Button color */
+  border-radius: 50%; /* Circular shape */
+  width: 50px; /* Button width */
+  height: 50px; /* Button height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-item-button a {
+  color: #ffffff; /* Text color */
+  text-decoration: none; /* No underline */
+  font-size: 24px; /* Text size */
+}
+
+.add-item-button a:hover {
+  color: #dddddd; /* Hover text color */
+}
+
 @media (max-width: 800px) {
     .column {
         flex: 50%;

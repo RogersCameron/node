@@ -18,6 +18,36 @@
     <p id="modalInfo">Some text in the Modal..</p>
   </div>
 </div>
+<!-- '+' Link/Button for Adding Items -->
+<div class="add-item-button">
+  <a href="#" id="showAddItemModal">+</a>
+</div>
+
+<!-- Add Item Modal -->
+<div id="addItemModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form id="addItemForm">
+      <h2>Add New Item</h2>
+      <label for="itemName">Item Name:</label>
+      <input type="text" id="itemName" name="itemName" required><br><br>
+      
+      <label for="itemImage">Select An Image:</label>
+      <input type="file" id="itemImage" name="itemImage" accept="image/*" required><br>
+      <img id="imagePreview" src="" alt="Image preview" style="max-width: 100%; display: none;"><br><br>
+      
+      <div id="suppliesContainer">
+        <label>Items:</label>
+        <input type="text" name="items[]" required>
+      </div>
+      <button type="button" id="addSupply">Add Item</button><br><br>
+      
+      <button type="submit">Save</button>
+      <button type="button" id="cancelAddItem">Cancel</button>
+    </form>
+  </div>
+</div>
+
 
 <script src="script.js"></script>
 </body>
